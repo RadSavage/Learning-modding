@@ -1,0 +1,27 @@
+{
+    "modListVersion": 2,
+    "modList": [
+        {
+            "modid": "LearningModding",
+            "name": "Learning-Modding",
+            "description": "RadSavage' Lets Mod Reboot Mod.",
+            "version": "1.0",
+            "mcversion": "1.7.2",
+            "url": "",
+            "updateUrl": "",
+            "authorList": [
+                "Kaeltis"
+            ],
+            "credits": "Authored by RadSavage",
+            "logoFile": "",
+            "screenshots": [],
+            "parent": "",
+            "requiredMods": [
+                "Forge"
+            ],
+            "dependencies": [],
+            "dependants": [],
+            "useDependencyInformation": false
+        }
+    ]
+}
