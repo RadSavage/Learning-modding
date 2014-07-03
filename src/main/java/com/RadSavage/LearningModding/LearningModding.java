@@ -1,5 +1,6 @@
 package com.RadSavage.LearningModding;
 
+import com.RadSavage.LearningModding.configuration.ConfigurationHandler;
 import com.RadSavage.LearningModding.proxy.IProxy;
 import com.RadSavage.LearningModding.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -15,13 +16,13 @@ public class LearningModding
     @Mod.Instance(Reference.MOD_ID)
     public static LearningModding instance;
 
-    @SidedProxy (clientSide = "com.RadSavage.LearningModding.proxy.ClientProxy", serverSide = "com.RadSavage.LearningModding.proxy.ServerProxy")
+    @SidedProxy (clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
